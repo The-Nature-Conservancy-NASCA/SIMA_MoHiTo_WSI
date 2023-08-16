@@ -1,0 +1,171 @@
+# Matlab - Version 2019b
+# MoHiTo
+# The order of the tickets cannot be modified
+# # Comments
+# ------------------------------------------------------------------
+
+# ------------------------------------------------------------------
+# Model Mode (Run = 1 | Calibration = 2)
+# ------------------------------------------------------------------
+* 1>1
+
+# ------------------------------------------------------------------
+# Parallel and Number Cores (True = 1| False = 0)
+# ------------------------------------------------------------------
+* 2>0|1
+
+# ------------------------------------------------------------------
+#  Mode Display information (Graphic = 0| Terminal = 1)
+# ------------------------------------------------------------------
+* 3>1
+
+# ------------------------------------------------------------------
+# Scenarios
+# ------------------------------------------------------------------
+* 4>Scenario-1|01-1985|12-2013
+
+# ------------------------------------------------------------------
+# ID of the Scenario for Calibration
+# ------------------------------------------------------------------
+* 5>Scenario-1
+
+# ------------------------------------------------------------------
+# Patameters SCE-Optmization
+# 1. Maximum number of experiments or evaluations
+# 2. Number of complexes (sub-pop.)- between 2 and 20
+# 3. Number of members en each complex
+# 4. Number of members en each simplex
+# 5. Evolution Steps
+# 6. Reflection step lengths in the Simplex method
+# 7. Contraction step lengths in the Simplex method
+# ------------------------------------------------------------------
+* 6>10000|10000|10000|10000|10000|20|20|10
+
+# ------------------------------------------------------------------
+# Range Parmeters of the Model
+# 1. a {min,max}
+# 2. b {min,max}
+# 3. c {min,max}
+# 4. d {min,max}
+# 5. Q_Umb {min,max}
+# 6. V_Umb {min,max}
+# 7. Trp {min,max}
+# 8. Tpr {min,max}
+# 9. ExtSup {min,max}
+# ------------------------------------------------------------------
+* 7>0,1|1,3000|0,1|0,1|1,3000|1,3000|0,1|0,1|0.7,1
+
+# ------------------------------------------------------------------
+# Names Files Adricultural Demand 
+# [Crop Type|Crop Time|Loss Percentage|Return Percentage|Filename]
+# ------------------------------------------------------------------
+* 8>Permanent|1|0|0|Permanente_Aguacate
+* 8>Permanent|1|0|0|Permanente_Banano
+* 8>Permanent|1|0|0|Permanente_Cacao
+* 8>Permanent|1|0|0|Permanente_Cafe
+* 8>Permanent|1|0|0|Permanente_Cana
+* 8>Permanent|1|0|0|Permanente_Citricos
+* 8>Permanent|1|0|0|Permanente_Frutales
+* 8>Permanent|1|0|0|Permanente_Otros
+* 8>Permanent|1|0|0|Permanente_Palma
+* 8>Permanent|1|0|0|Permanente_Platano
+* 8>Trasients|6|0|0|Transitorios_Arroz
+* 8>Trasients|3|0|0|Transitorios_Arveja
+* 8>Trasients|3|0|0|Transitorios_Cebolla
+* 8>Trasients|3|0|0|Transitorios_Frijol
+* 8>Trasients|4|0|0|Transitorios_Hortalizas
+* 8>Trasients|4|0|0|Transitorios_Maiz
+* 8>Trasients|5|0|0|Transitorios_Otros
+* 8>Trasients|5|0|0|Transitorios_Papa
+* 8>Trasients|3|0|0|Transitorios_Soya
+* 8>Trasients|5|0|0|Transitorios_Tomate
+* 8>Trasients|7|0|0|Transitorios_Yuca
+
+# ------------------------------------------------------------------
+# Names Files Domestic Demand 
+# [Loss Percentage|Return Percentage|Filename]
+# ------------------------------------------------------------------
+* 9>0.13|0.8|Population
+
+# ------------------------------------------------------------------
+# Names Files Livestock Demand 
+# [Loss Percentage|Return Percentage|Filename]
+# ------------------------------------------------------------------
+* 10>0.3|0.5|Aves_Engorde
+* 10>0.3|0.5|Aves_Genetico
+* 10>0.3|0.5|Aves_Levante
+* 10>0.3|0.5|Aves_Postura
+* 10>0.3|0.5|Aves_Transpatio
+* 10>0.3|0.5|Bovinos_Hembras_Machos_1
+* 10>0.3|0.5|Bovinos_Hembras_Machos_12-24
+* 10>0.3|0.5|Bovinos_Hembras_Machos_24-36
+* 10>0.3|0.5|Bovinos_Hembras_Machos_36
+* 10>0.3|0.5|Porcinos_Cerdos_Ceba
+* 10>0.3|0.5|Porcinos_Cerdos_Levante
+* 10>0.3|0.5|Porcinos_Hembras_Cria
+* 10>0.3|0.5|Porcinos_Hembras_Remplazo
+* 10>0.3|0.5|Porcinos_Lechones
+* 10>0.3|0.5|Porcinos_Reproductores
+* 10>0.3|0.5|Porcinos_Transpatio
+
+# ------------------------------------------------------------------
+# Names Files Hydrocarbons Demand
+# [Loss Percentage|Return Percentage|Filename]
+# ------------------------------------------------------------------
+* 11>0|0|Hydrocarbons
+
+# ------------------------------------------------------------------
+# Names Files Mining Demand 
+# [Loss Percentage|Return Percentage|Filename]
+# ------------------------------------------------------------------
+* 12>0|0|ArcillaMicelanea
+* 12>0|0|ArenaRio
+* 12>0|0|ArenaSilicea
+* 12>0|0|Carbon
+* 12>0|0|GravaRio
+* 12>0|0|Hierro
+* 12>0|0|Yeso
+
+# ------------------------------------------------------------------
+# Names Files Groundwater Demand
+# ------------------------------------------------------------------
+* 13>DmSub
+
+# ------------------------------------------------------------------
+# Export State varible and Model Response as a Result (True = 1| False = 0)
+# ------------------------------------------------------------------
+* 14>Q|1
+* 15>P|1
+* 16>Esc|1
+* 17>ETP|1
+* 18>ETR|1
+* 19>Sw|1
+* 20>Sg|1
+* 21>Y|1
+* 22>Ro|1
+* 23>Rg|1
+* 24>Qg|1
+* 25>Ql|1
+* 26>Rl|1
+* 27>Vh|1
+* 28>Agri_Dm|1
+* 29>Dom_Dm|1
+* 30>Liv_Dm|1
+* 31>Hy_Dm|1
+* 32>Min_Dm|1
+* 33>Agri_R|1
+* 34>Dom_R|1
+* 35>Liv_R|1
+* 36>Hy_R|1
+* 37>Min_R|1
+* 38>Index|0
+* 39>TS|0
+* 40>Box|0
+* 41>Fur|0
+* 42>DC|0
+* 43>MMM|0
+
+# ------------------------------------------------------------------
+# Demand Estimation (True = 1| False = 0)
+# ------------------------------------------------------------------
+* 44>1
